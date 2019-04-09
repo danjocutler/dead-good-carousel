@@ -1,74 +1,111 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 img {
   max-width: 100%;
 }
 
+header .logo img {
+  width: 65%;
+  margin: 20px 20px 20px 0;
+}
+
+header .tagline h2 {
+  color: #8e8e8e;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+header .view-more {
+  text-align: right;
+}
+
+header .view-more a {
+  display: inline-block;
+  color: #555;
+  margin: 30px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+header .view-more a .fa-chevron-right {
+  color: #000;
+  margin-left: 15px;
+}
+
+header .view-more a:hover,
+header .view-more a:hover .fa-chevron-right {
+  color: #9e0000;
+}
+
 #Carousel {
-  position:relative;
-  height:500px;
-  padding:0 50px;
-  overflow:hidden;
+  position: relative;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-/* #Carousel .arrow {
-  position:absolute;
-  bottom:50%;
-  z-index:2;
-  transform:translateY(50%);
-  width:50px;
-  height:50px;
-  cursor:pointer;
-}
-#Carousel .arrow.left {
-  left:8px;
-  background-position:-526px -209px;
-}
-#Carousel .arrow.right {
-  right:0;
-  background-position:-591px -209px;
-} */
+
 #Carousel .carousel-wrapper {
-  position:absolute;
-  padding-left:0;
-  width:999999em;
-  clear:both;
+  position: absolute;
+  padding-left: 0;
+  width: 999999em;
+  clear: both;
 }
+
 #Carousel .carousel-wrapper .book-item {
-  width:33.33%;
-  max-width:250px;
-  float:left;
-  margin:0 10px;
+  width: 180px;
+  float: left;
+  margin: 0 10px;
 }
-#Carousel .carousel-wrapper .item-wrapper .product-box {
-  position:relative;
-  background-color:#fff;
-  color:#555;
-  text-align:center;
-  box-shadow:0 3px 10px 0 #555;
-  height:300px;
-  padding:10px;
-  margin-bottom:20px
+
+#Carousel .carousel-wrapper .book-item a {
+  text-decoration: none;
 }
-#Carousel .carousel-wrapper .item-wrapper .product-box p {
-  font-size:14px;
+
+#Carousel .carousel-wrapper .book-item .image-wrapper {
+  position: relative;
+  height: 290px;
 }
-#Carousel .carousel-wrapper .item-wrapper .product-box .icon {
-  position:absolute;
-  bottom:0;
-  left:0;
-  width:220px;
-  height:150px;
+
+#Carousel .carousel-wrapper .book-item .image-wrapper img {
+  position: absolute;
+  bottom: 0;
 }
-#Carousel .carousel-wrapper .item-wrapper .product-box .icon.why-choose-us {
-  background-position:0px -310px;
+
+#Carousel .carousel-wrapper .book-item a:hover h3,
+#Carousel .carousel-wrapper .book-item a:hover p {
+  color: #9e0000;
 }
-#Carousel .carousel-wrapper .item-wrapper .product-box .icon.testimonial {
-  background-position:-272px -350px;
+
+#Carousel .carousel-wrapper .book-item h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0 0 0;
 }
-#Carousel .carousel-wrapper .item-wrapper .product-box .icon.dots {
-  background-position:-440px -270px;
+
+#Carousel .carousel-wrapper .book-item p {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 10px 0;
 }
-#Carousel .carousel-wrapper .item-wrapper .product-box .icon.iam-logistics {
-  background-position:-690px -206px;
+
+#Carousel .carousel-wrapper .book-item .amazon-buy {
+  background-color: #FA6533;
+  color: #fff;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 3px;
 }
-#Carousel .carousel-wrapper .item-wrapper .product-box .icon.iam {
-  background-position:-920px -130px;
+
+#Carousel .carousel-wrapper .book-item .amazon-buy:hover {
+  background-color: #9e0000;
 }

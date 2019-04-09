@@ -6,7 +6,9 @@ dgbJson.onload = function () {
 		bookData.forEach(function(book) {
 			html += "<div class='book-item'>";
 			html += "<a href='" + book.link + "' target='_blank'>";
+			html += "<div class='image-wrapper'>";
 			html += "<img src='" + book.acf.cover_image.url + "' alt='" + book.acf.title + " book cover' />";
+			html += "</div>";
 			html += "<h3>" + book.acf.title + "</h3>";
 			html += "<p>" + book.acf.author + "</p>";
 			html += "</a>";
@@ -15,10 +17,10 @@ dgbJson.onload = function () {
 			html += "</div>";
 		});
 		html += "</div>";
-		document.getElementById("Carousel").innerHTML = html;
 	} else {
-
+		html += "</p>Unable to load book data!</p>";
 	}
+	document.getElementById("Carousel").innerHTML = html;
 };
 dgbJson.open('GET', 'https://www.deadgoodbooks.co.uk/wp-json/wp/v2/posts?categories=1207');
 dgbJson.send();
