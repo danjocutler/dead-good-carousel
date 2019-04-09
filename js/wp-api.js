@@ -22,5 +22,5 @@ dgbJson.onload = function () {
 	}
 	document.getElementById("Carousel").innerHTML = html;
 };
-dgbJson.open('GET', 'https://www.deadgoodbooks.co.uk/wp-json/wp/v2/posts?categories=1207');
+dgbJson.open('GET', 'https://www.deadgoodbooks.co.uk/wp-json/wp/v2/posts?categories=1207&per_page=12');
 dgbJson.send();
