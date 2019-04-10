@@ -1,6 +1,7 @@
 $(window).load(function(){
 
   $('#Carousel').slick({
+    speed: 800,
     arrows: false,
     slidesToShow: 6,
     slidesToScroll: 3,
