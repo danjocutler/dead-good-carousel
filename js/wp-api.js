@@ -2,7 +2,7 @@ var dgbJson = new XMLHttpRequest();
 dgbJson.onload = function () {
 	if (dgbJson.status >= 200 && dgbJson.status < 300) {
 		var bookData = JSON.parse(dgbJson.response);
-		var html = "<div class='carousel-wrapper'>";
+		var html = "";
 		bookData.forEach(function(book) {
 			html += "<div class='book-item'>";
 			html += "<a href='" + book.link + "' target='_blank'>";
@@ -16,7 +16,6 @@ dgbJson.onload = function () {
 			html += "Buy the book</a>";
 			html += "</div>";
 		});
-		html += "</div>";
 	} else {
 		html += "</p>Unable to load book data!</p>";
 	}

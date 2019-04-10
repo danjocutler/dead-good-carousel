@@ -42,58 +42,43 @@ header .view-more a:hover .fa-chevron-right {
 }
 
 #Carousel {
-  position: relative;
-  height: 500px;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  margin-bottom: 50px;
 }
 
-#Carousel .carousel-wrapper {
-  position: absolute;
-  padding-left: 0;
-  width: 999999em;
-  clear: both;
-}
-
-#Carousel .carousel-wrapper .book-item {
-  width: 180px;
-  float: left;
-  margin: 0 10px;
-}
-
-#Carousel .carousel-wrapper .book-item a {
+#Carousel .book-item a {
   text-decoration: none;
+  outline: none;
 }
 
-#Carousel .carousel-wrapper .book-item .image-wrapper {
+#Carousel .book-item .image-wrapper {
   position: relative;
-  height: 290px;
+  height: 320px;
+  margin: 0 5px;
 }
 
-#Carousel .carousel-wrapper .book-item .image-wrapper img {
+#Carousel .book-item .image-wrapper img {
   position: absolute;
   bottom: 0;
 }
 
-#Carousel .carousel-wrapper .book-item a:hover h3,
-#Carousel .carousel-wrapper .book-item a:hover p {
+#Carousel .book-item a:hover h3,
+#Carousel .book-item a:hover p {
   color: #9e0000;
 }
 
-#Carousel .carousel-wrapper .book-item h3 {
+#Carousel .book-item h3 {
   font-size: 18px;
   color: #333;
-  margin: 10px 0 0 0;
+  margin: 10px 0 0 5px;
 }
 
-#Carousel .carousel-wrapper .book-item p {
+#Carousel .book-item p {
   font-size: 14px;
   color: #555;
-  margin: 0 0 10px 0;
+  margin: 0 0 10px 5px;
 }
 
-#Carousel .carousel-wrapper .book-item .amazon-buy {
+#Carousel .book-item .amazon-buy {
   background-color: #FA6533;
   color: #fff;
   display: block;
@@ -106,6 +91,18 @@ header .view-more a:hover .fa-chevron-right {
   border-radius: 3px;
 }
 
-#Carousel .carousel-wrapper .book-item .amazon-buy:hover {
+#Carousel .book-item .amazon-buy:hover {
   background-color: #9e0000;
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  #Carousel .book-item .image-wrapper {
+    height: 560px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #Carousel .book-item .image-wrapper {
+    height: 400px;
+  }
 }
